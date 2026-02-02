@@ -205,10 +205,11 @@ body{
     <p>Lot 2494, Jalan Joget 4, Taman Ria Jaya, 08000, Sungai Petani, Kedah</p>
 
     <div class="map-container">
-      <iframe 
-        src="https://www.google.com/maps/embed/v1/place?key=YOUR_API_KEY&q=Lot+2494,+Jalan+Joget+4,+Taman+Ria+Jaya,+08000,+Sungai+Petani,+Kedah" 
-        allowfullscreen>
-      </iframe>
+      <iframe
+  src="https://www.google.com/maps?q=Lot+2494,+Jalan+Joget+4,+Taman+Ria+Jaya,+08000,+Sungai Petani,+Kedah&output=embed"
+  allowfullscreen
+  loading="lazy"
+></iframe>
     </div>
 
     <h2>Kenangan Kami</h2>
