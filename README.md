@@ -28,10 +28,18 @@ body {
 }
 
 /* =========================
-   INVITATION CARD
+   PAGE 1 - INVITATION CARD
 ========================= */
+.page1 {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('https://raw.githubusercontent.com/Maqil0283/assets/refs/heads/main/floral-bg.png.png') center/cover no-repeat;
+}
+
 .card {
-  margin: 80px 20px 40px;
   opacity: 0;
   animation: fadeIn 0.8s ease forwards;
   background: rgba(255, 255, 255, 0.88);
@@ -99,16 +107,16 @@ body {
 }
 
 /* =========================
-   PAGE 2 SECTION
+   PAGE 2 - LOCATION & GALLERY
 ========================= */
-.section {
+.page2 {
   width: 100%;
   min-height: 100vh;
   padding: 50px 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url("https://raw.githubusercontent.com/Maqil0283/assets/refs/heads/main/floral-bg.png.png") center/cover no-repeat;
+  background: url('https://raw.githubusercontent.com/Maqil0283/assets/refs/heads/main/floral-bg.png.png') center/cover no-repeat;
 }
 
 .location-card {
@@ -175,8 +183,8 @@ body {
 
 <body>
 
-<!-- INVITATION CARD -->
-<section>
+<!-- PAGE 1 -->
+<section class="page1">
   <div class="card">
     <div class="subtitle">Engagement of</div>
 
@@ -200,8 +208,8 @@ body {
   </div>
 </section>
 
-<!-- LOCATION & GALLERY -->
-<section class="section" id="location">
+<!-- PAGE 2 -->
+<section class="page2" id="location">
   <div class="location-card" data-aos="fade-up">
     <h2>Lokasi Majlis</h2>
     <p>Lot 2494, Jalan Joget 4, Taman Ria Jaya, 08000, Sungai Petani, Kedah</p>
