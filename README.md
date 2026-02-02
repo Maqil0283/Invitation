@@ -43,14 +43,24 @@ GATE / PINTU GERBANG
   position:absolute;
   width:50%;
   height:100%;
-  background:rgba(255,255,255,0.95);
   top:0;
   z-index:5;
+  background-size:cover;
+  background-position:center;
   animation-fill-mode:forwards;
 }
 
-.gate.left{ left:0; animation: openLeft 1.5s ease forwards;}
-.gate.right{ right:0; animation: openRight 1.5s ease forwards;}
+.gate.left{
+  left:0;
+  background-image:url("https://raw.githubusercontent.com/Maqil0283/assets/refs/heads/main/left.PNG");
+  animation: openLeft 1.5s ease forwards;
+}
+
+.gate.right{
+  right:0;
+  background-image:url("https://raw.githubusercontent.com/Maqil0283/assets/refs/heads/main/right.PNG");
+  animation: openRight 1.5s ease forwards;
+}
 
 @keyframes openLeft{ 0%{transform:translateX(0);} 100%{transform:translateX(-100%);} }
 @keyframes openRight{ 0%{transform:translateX(0);} 100%{transform:translateX(100%);} }
