@@ -59,12 +59,12 @@ body{
   margin-bottom:18px;
 }
 
-.monogram .A{
+.monogram .s{
   font-size:90px;
   line-height:1;
 }
 
-.monogram .s{
+.monogram .a{
   font-size:58px;
   margin-top:-8px;
 }
