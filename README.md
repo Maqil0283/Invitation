@@ -1,8 +1,9 @@
+<!DOCTYPE html>
 <html lang="ms">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>A | A</title>
+<title>A | A Engagement</title>
 
 <!-- Google Font -->
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
@@ -16,13 +17,14 @@
   padding:0;
   box-sizing:border-box;
   font-family:'Playfair Display', serif;
+  scroll-behavior: smooth;
 }
 
 body{
   background:#f6f3ed;
 }
 
-/* FULL SCREEN FLORAL */
+/* SECTION BASE */
 .section{
   min-height:100vh;
   display:flex;
@@ -31,32 +33,36 @@ body{
   background:
     url("https://raw.githubusercontent.com/Maqil0283/assets/refs/heads/main/floral-bg.png.PNG")
     center/cover no-repeat;
+  flex-direction:column;
+  padding:40px 20px;
 }
 
-/* CARD */
-.card{
+/* CARD BASE */
+.card, .location-card{
   background:rgba(255,255,255,0.88);
-  width:86%;
-  max-width:380px;
-  padding:42px 26px;
-  border-radius:16px;
+  width:90%;
+  max-width:500px;
+  padding:40px 25px;
+  border-radius:18px;
   text-align:center;
+  box-shadow:0 10px 30px rgba(0,0,0,0.1);
+  margin-bottom:30px;
 }
 
 /* TEXT */
 .subtitle{
-  font-size:12px;
+  font-size:13px;
   letter-spacing:3px;
   margin-bottom:26px;
+  color:#6b7a3c;
 }
 
-/* MONOGRAM */
 .monogram{
   display:flex;
   flex-direction:column;
   align-items:center;
   color:#6b7a3c;
-  margin-bottom:18px;
+  margin-bottom:20px;
 }
 
 .monogram .s{
@@ -66,14 +72,14 @@ body{
 
 .monogram .a{
   font-size:58px;
-  margin-top:-8px;
+  margin-top:-10px;
 }
 
-/* CONTENT */
 .names{
   letter-spacing:4px;
-  font-size:14px;
+  font-size:15px;
   margin:16px 0;
+  font-weight:600;
 }
 
 .date{
@@ -88,7 +94,7 @@ body{
 }
 
 .ayat{
-  font-size:13px;
+  font-size:14px;
   font-style:italic;
   line-height:1.6;
   margin-top:22px;
@@ -96,15 +102,76 @@ body{
 
 .hashtag{
   font-size:12px;
-  opacity:0.7;
+  opacity:0.8;
   margin-top:22px;
+}
+
+/* LOCATION SECTION */
+.location-card h2{
+  font-size:18px;
+  margin-bottom:16px;
+  color:#6b7a3c;
+}
+
+.location-card p{
+  font-size:14px;
+  margin-bottom:25px;
+}
+
+/* GOOGLE MAP */
+.map-container{
+  width:100%;
+  height:250px;
+  margin-bottom:20px;
+  border-radius:12px;
+  overflow:hidden;
+}
+
+.map-container iframe{
+  width:100%;
+  height:100%;
+  border:0;
+}
+
+/* GALLERY */
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(120px, 1fr));
+  gap:12px;
+  justify-items:center;
+}
+
+.gallery img{
+  width:100%;
+  max-width:150px;
+  aspect-ratio:1/1;
+  object-fit:cover;
+  border-radius:12px;
+  transition: transform 0.3s ease;
+  cursor:pointer;
+}
+
+.gallery img:hover{
+  transform: scale(1.1);
+}
+
+/* RESPONSIVE */
+@media(max-width:480px){
+  .monogram .s{ font-size:70px; }
+  .monogram .a{ font-size:45px; }
+  .card, .location-card{ padding:30px 20px; }
+  .names{ font-size:14px; }
+  .date{ font-size:14px; }
+  .ayat{ font-size:13px; }
+  .map-container{ height:200px; }
 }
 </style>
 </head>
 
 <body>
 
-<section class="section">
+<!-- PAGE 1: Engagement -->
+<section class="section" id="engagement">
   <div class="card" data-aos="zoom-in">
 
     <div class="subtitle">Engagement</div>
@@ -124,6 +191,32 @@ body{
     <div class="ayat">
       “Dan Kami menciptakan kamu berpasang-pasangan”<br>
       <small>Surah An-Naba’ (78:8)</small>
+    </div>
+
+    <div class="hashtag">#AlyakeAqilhayat</div>
+
+  </div>
+</section>
+
+<!-- PAGE 2: Location & Photos -->
+<section class="section" id="location">
+  <div class="location-card" data-aos="fade-up">
+
+    <h2>Lokasi Majlis</h2>
+    <p>Lot 2494, Jalan Joget 4, Taman Ria Jaya, 08000, Sungai Petani, Kedah</p>
+
+    <div class="map-container">
+      <iframe 
+        src="https://www.google.com/maps/embed/v1/place?key=YOUR_API_KEY&q=Lot+2494,+Jalan+Joget+4,+Taman+Ria+Jaya,+08000,+Sungai+Petani,+Kedah" 
+        allowfullscreen>
+      </iframe>
+    </div>
+
+    <h2>Kenangan Kami</h2>
+    <div class="gallery">
+      <img src="https://raw.githubusercontent.com/Maqil0283/assets/refs/heads/main/photo1.png" alt="Foto 1">
+      <img src="https://raw.githubusercontent.com/Maqil0283/assets/refs/heads/main/photo2.png" alt="Foto 2">
+      <img src="https://raw.githubusercontent.com/Maqil0283/assets/refs/heads/main/photo3.png" alt="Foto 3">
     </div>
 
     <div class="hashtag">#AlyakeAqilhayat</div>
