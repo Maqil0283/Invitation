@@ -203,7 +203,7 @@ SECTION / PAGE 2
   <div class="gate right"></div>
 
   <div class="card" data-aos="zoom-in">
-    <div class="subtitle">Engagement</div>
+    <div class="subtitle">Engagement of </div>
 
     <div class="monogram">
       <div class="interlock">A&amp;A</div>
