@@ -118,7 +118,7 @@ body{
 
     <div class="date">
       30.05.2025
-      <small>3 Jamadilawal 1447H</small>
+      <small>10:00am</small>
     </div>
 
     <div class="ayat">
